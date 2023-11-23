@@ -12,7 +12,10 @@
         android:theme="@style/Theme.ShopApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ShoppingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.loginFeature.activity.LoginRegisterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
