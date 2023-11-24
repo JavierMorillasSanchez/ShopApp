@@ -1,4 +1,4 @@
-package com.example.shopapp.features.shopFeature.activity
+package com.example.shopapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

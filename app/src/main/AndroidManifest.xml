@@ -15,7 +15,7 @@
             android:name=".ShoppingActivity"
             android:exported="false" />
         <activity
-            android:name=".features.loginFeature.activity.LoginRegisterActivity"
+            android:name=".activities.LoginRegisterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
