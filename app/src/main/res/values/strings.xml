@@ -10,4 +10,8 @@
     <string name="forgotPassword">I have forgot my password.</string>
     <string name="facebook">Facebook</string>
     <string name="google">Google</string>
+    <string name="letsRegister">Let\'s Register</string>
+    <string name="haveAccount">Do you have an account? Log in.</string>
+    <string name="hintFirstName">First Name</string>
+    <string name="hintLastName">Last Name</string>
 </resources>

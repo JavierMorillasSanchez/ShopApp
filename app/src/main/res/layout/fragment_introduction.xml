@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideLineElipseTopTexture" />
 
     <TextView
-        android:id="@+id/tvLetsLogin"
+        android:id="@+id/tvLetsRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/h4"
@@ -42,13 +42,13 @@
         android:gravity="center"/>
 
     <TextView
-        android:id="@+id/tvDontHaveAccount"
+        android:id="@+id/tvHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/h2"
-        app:layout_constraintStart_toStartOf="@id/tvLetsLogin"
-        app:layout_constraintEnd_toEndOf="@id/tvLetsLogin"
-        app:layout_constraintTop_toBottomOf="@id/tvLetsLogin"
+        app:layout_constraintStart_toStartOf="@id/tvLetsRegister"
+        app:layout_constraintEnd_toEndOf="@id/tvLetsRegister"
+        app:layout_constraintTop_toBottomOf="@id/tvLetsRegister"
         android:textAlignment="center"
         android:gravity="center"
         android:text="@string/quality"
@@ -65,9 +65,9 @@
         android:layout_width="@dimen/smallButtonWidth"
         android:layout_height="@dimen/smallButtonHeight"
         style="@style/blueButtonStyle"
-        app:layout_constraintTop_toBottomOf="@id/tvDontHaveAccount"
-        app:layout_constraintStart_toStartOf="@id/tvDontHaveAccount"
-        app:layout_constraintEnd_toEndOf="@id/tvDontHaveAccount"
+        app:layout_constraintTop_toBottomOf="@id/tvHaveAccount"
+        app:layout_constraintStart_toStartOf="@id/tvHaveAccount"
+        app:layout_constraintEnd_toEndOf="@id/tvHaveAccount"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="@string/start" />
 
