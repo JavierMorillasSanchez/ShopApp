@@ -43,7 +43,6 @@
         <item name="android:fontFamily">@font/poppins_light</item>
     </style>
 
-
     <dimen name="h4TextSize">35sp</dimen>
     <dimen name="h2TextSize">17sp</dimen>
     <dimen name="h3TextSize">22sp</dimen>

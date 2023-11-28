@@ -5,4 +5,9 @@
     <string name="start">Start</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="letsLogin">Let\'s Login</string>
+    <string name="dontHaveAccount">Don\'t have an account? Register now!</string>
+    <string name="forgotPassword">I have forgot my password.</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
 </resources>

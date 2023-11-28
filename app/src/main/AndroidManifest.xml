@@ -8,11 +8,11 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/Theme.ShopApp"
         tools:targetApi="31">
         <activity
-            android:name=".ShoppingActivity"
+            android:name="activities.ShoppingActivity"
             android:exported="false" />
         <activity
             android:name=".activities.LoginRegisterActivity"
