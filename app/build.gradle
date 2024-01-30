@@ -1,10 +1,12 @@
 plugins {
     id 'com.android.application'
+    id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
+    id 'com.google.dagger.hilt.android'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
-    id 'dagger.hilt.android.plugin'
-    id 'com.google.gms.google-services'
+    id 'kotlin-android'
 }
 
 android {
@@ -33,6 +35,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
+    }
+
+    buildFeatures{
+        viewBinding true
     }
 
     compileOptions {
@@ -86,8 +92,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
 
     //Dagger hilt
-    implementation "com.google.dagger:hilt-android:2.38.1"
-    kapt "com.google.dagger:hilt-compiler:2.38.1"
+    //implementation "com.google.dagger:hilt-android:2.42"
+    //kapt "com.google.dagger:hilt-compiler:2.42"
 
     //Firebase
     implementation 'com.google.firebase:firebase-auth:21.0.6'
@@ -95,6 +101,20 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:20.1.0'
 
     //Coroutines with firebase
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.0'
+
+    //Hilt
+    implementation 'com.google.dagger:hilt-android:2.50'
+    kapt 'com.google.dagger:hilt-compiler:2.50'
+
+    // For instrumentation tests
+    androidTestImplementation  'com.google.dagger:hilt-android-testing:2.50'
+    kaptAndroidTest 'com.google.dagger:hilt-compiler:2.50'
+
+    // For local unit tests
+    testImplementation 'com.google.dagger:hilt-android-testing:2.50'
+    kaptTest 'com.google.dagger:hilt-compiler:2.50'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"
 
 }
